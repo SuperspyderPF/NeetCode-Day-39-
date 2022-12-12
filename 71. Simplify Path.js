@@ -1,0 +1,1 @@
+simplifyPath = (p, s=[]) => {return p.split('/').forEach(item => (item === '..')? s.pop() : ((item && item !== '.')? s.push(item):'')), '/' + s.join('/')}
